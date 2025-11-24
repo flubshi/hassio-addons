@@ -2,8 +2,8 @@
 version: 1.0.0
 slug: stt-fallback
 name: stt-fallback
-description: Speech-to-text fallback
-url: https://github.com/rhasspy/hassio-addons/tree/master/stt-fallback
+description: Speech-to-text fallback test
+url: https://github.com/flubshi/hassio-addons/tree/master/stt-fallback
 arch:
   - amd64
   - aarch64
@@ -12,7 +12,7 @@ discovery:
   - wyoming
 homeassistant_api: true
 options:
-  entity_ids: "stt.home_assistant_cloud"
+  entity_ids: "stt.speech_to_phrase stt.faster_whisper"
   debug_logging: false
 schema:
   entity_ids: str
